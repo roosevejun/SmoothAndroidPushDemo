@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/MatchParent"
+    android:background="@drawable/welcome"
+	android:clickable="false">
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginBottom="1000dp">
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="公路基础设施建设"
+		android:id="@+id/systemtitletextView"
+		android:layout_marginTop="60dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"/>
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="质量安全监测管理系统"
+			android:id="@+id/systemnametextView"
+			android:layout_marginTop="31dp"
+			android:layout_below="@+id/systemtitletextView"
+			android:layout_centerHorizontal="true"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/loginnameimageView"
+			android:layout_alignLeft="@+id/systemnametextView"
+			android:src="@drawable/loginnameimage"
+			android:layout_marginTop="257dp"/>
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/loginpasswordimageView"
+			android:src="@drawable/loginpasswordimage"
+			android:layout_marginTop="320dp"
+			android:paddingLeft="10dp"
+			android:layout_alignRight="@+id/loginnameimageView"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView"
+			android:src="@drawable/inputlinetext"
+			android:layout_marginBottom="46dp"
+			android:layout_alignBottom="@+id/loginnameimageView"
+			android:layout_centerHorizontal="true"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView2"
+			android:src="@drawable/inputlinetext"
+			android:layout_below="@+id/imageView"
+			android:layout_alignLeft="@+id/imageView"
+			android:layout_marginTop="15dp"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView3"
+			android:src="@drawable/inputlinetext"
+			android:layout_below="@+id/userpasseditText"
+			android:layout_alignLeft="@+id/imageView2"
+			android:paddingTop="20dp"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView4"
+			android:paddingBottom="20dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="48dp"/>
+
+	<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/usernameeditText"
+			android:text="ahtt"
+			android:visibility="visible"
+			android:layout_centerVertical="true"
+			android:layout_alignRight="@+id/systemnametextView"
+			android:layout_alignLeft="@+id/systemtitletextView"/>
+
+	<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="textPassword"
+			android:ems="10"
+			android:id="@+id/userpasseditText"
+			android:layout_below="@+id/imageView2"
+			android:layout_alignBottom="@+id/loginpasswordimageView"
+			android:layout_alignLeft="@+id/usernameeditText"/>
+
+	<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/image_btn_login_confirm"
+			android:src="@drawable/btn_confirm"
+			android:layout_alignBottom="@+id/imageView4"
+			android:layout_alignRight="@+id/imageView3"
+			android:layout_alignLeft="@+id/imageView3"
+			android:onClick="loginViewListener"
+			android:background="@drawable/btn_confirm"/>
+
+</RelativeLayout>

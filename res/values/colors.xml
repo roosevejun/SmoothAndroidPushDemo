@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="main_bgcolor">#FFFFFF</color>
+	<color name="privacy_item_color">#7D7D7D</color>
+	<color name="shape_pressed_color">#999</color>
+	<color name="white">#FFF</color>
+	<color name="gray_deep">#555555</color>
+	<color name="gray">#999999</color>
+	<color name="color_bt_selected">#2668db</color>
+	<color name="color_bt_unselect">#828282</color>
+	<color name="transparent">#00000000</color>
+</resources>
